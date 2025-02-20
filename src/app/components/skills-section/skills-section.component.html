@@ -1,0 +1,49 @@
+<section id="skills" class="skills section light-background">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Skills & Expertise</h2>
+      <p>Proficient in modern technologies and frameworks, enabling scalable and efficient software development.</p>
+    </div><!-- End Section Title -->
+  
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row skills-content skills-animation">
+        <div class="col-lg-6">
+          <div class="progress" *ngFor="let skill of frontendSkills">
+            <span class="skill">
+              <span>{{ skill.name }}</span>
+              <i class="val">{{ skill.value }}%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                [style.width.%]="skill.value"
+                role="progressbar"
+                [attr.aria-valuenow]="skill.value"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div><!-- End Skills Item -->
+        </div>
+
+        <div class="col-lg-6">
+          <div class="progress" *ngFor="let skill of backendSkills">
+            <span class="skill">
+              <span>{{ skill.name }}</span>
+              <i class="val">{{ skill.value }}%</i>
+            </span>
+            <div class="progress-bar-wrap">
+              <div
+                class="progress-bar"
+                [style.width.%]="skill.value"
+                role="progressbar"
+                [attr.aria-valuenow]="skill.value"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div><!-- End Skills Item -->
+        </div>
+      </div>
+    </div>
+  </section>

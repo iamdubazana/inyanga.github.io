@@ -1,0 +1,35 @@
+/*- # Global Header -*/
+
+/* -- Top Menu Part
+--------------------------------------------------------------*/
+.top-content {
+    padding: 15px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    font-style: normal;
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+}
+
+.header {
+    width: 100dvw;
+    height: 4rem;
+    color: var(--dark-text-color);
+    background-color: var(--light-color);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.header .social-links a:hover {
+    color: var(--contrast-color);
+    background: var(--accent-color);
+}
+
