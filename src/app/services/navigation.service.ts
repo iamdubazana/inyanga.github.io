@@ -11,11 +11,13 @@ export class NavigationService {
   }
 
   toggleHeader(): void {
-    const header = document.querySelector('#header');
+    
+    
+    const header = document.querySelector('#navmenu');
     const toggleBtn = document.querySelector('.header-toggle');
-
+    console.log(header)
     if (header && toggleBtn) {
-      header.classList.toggle('header-show');
+      header.classList.toggle('nav-show');
       toggleBtn.classList.toggle('bi-list');
       toggleBtn.classList.toggle('bi-x');
     }
@@ -31,18 +33,6 @@ export class NavigationService {
     });
   }
 
-  toggleDropdowns(): void {
-    document.querySelectorAll('.navmenu .toggle-dropdown').forEach((navmenu) => {
-      navmenu.addEventListener('click', (e) => {
-        e.preventDefault();
-        const parent = (e.target as HTMLElement).parentNode as HTMLElement;
-        if (parent) {
-          parent.classList.toggle('active');
-          parent.nextElementSibling?.classList.toggle('dropdown-active');
-        }
-      });
-    });
-  }
 
   removePreloader(): void {
     const preloader = document.querySelector('#preloader');

@@ -16,6 +16,7 @@ export class NavigationComponent implements OnInit {
   }
 
   toggleHeader(): void {
+    console.log("text")
     this.navigationService.toggleHeader();
   }
 }

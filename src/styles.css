@@ -7,7 +7,7 @@
 
 
 :root {
-    --dark-text-color: #C5A992;
+    --accent-color: #C5A992;
     --secondary-color: #C5A992;
     --dark-color: #2f2f2f;
     --light-color: #F3F2EC;
@@ -130,7 +130,7 @@ section,
 .section {
     color: var(--default-color);
     background-color: var(--background-color);
-    padding: 60px 0;
+    padding: 5rem 0;
     overflow: clip;
 }
 
@@ -170,4 +170,15 @@ section,
     body {
         font-size: 0.88rem;
     }
+}
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Optional: Prevent layout shift */
+html, body {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
 }

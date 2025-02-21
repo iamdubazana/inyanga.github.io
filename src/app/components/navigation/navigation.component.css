@@ -8,13 +8,13 @@
 }
 
 .logo{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: 0.15rem;
     font-style: normal;
     background: var(--dark-color);
     color: var(--light-color);
-    padding: 0.4rem;
+    padding: 0.5rem;
     border-radius: 0.3rem;
 }
 
@@ -26,10 +26,109 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
+    z-index: 99;
 }
 
-.header .social-links a:hover {
+
+.header .header-toggle {
+    color: var(--light-color);
+    background-color: var(--dark-color);
+    font-size: 22px;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header .header-toggle:hover {
+    color: var(--light-color);
+    background-color: color-mix(in srgb, var(--dark-color) 90%, white 15%);
+}
+
+/*-
+  # Navigation Menu
+  -*/
+.mobile-nav-toggle {
+    display: none;
+}
+
+.navmenu a,
+.navmenu a:focus {
+    color: var(--nav-color);
+    padding: 15px 10px;
+    font-family: var(--nav-font);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.navmenu a .navicon,
+.navmenu a:focus .navicon {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus {
+    color: var(--nav-hover-color);
+}
+
+.navmenu a:hover .navicon,
+.navmenu .active .navicon,
+.navmenu .active:focus .navicon {
+    color: var(--accent-color);
+}
+
+.navmenu .active .toggle-dropdown,
+.navmenu .active:focus .toggle-dropdown {
+    background-color: var(--accent-color);
     color: var(--contrast-color);
-    background: var(--accent-color);
+    transform: rotate(180deg);
 }
 
+.navmenu ul li a{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.nav-show{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 20rem;
+    color: var(--light-color);
+    background: var(--dark-color);
+    display: flex !important;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 999;
+}
+
+.nav-show ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.nav-show ul li {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-show ul li a{
+    color: var(--light-color);
+    justify-content: start !important;
+    align-items: start !important;
+    display: flex;
+    gap: 1rem;
+}

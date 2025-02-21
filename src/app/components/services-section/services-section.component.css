@@ -3,6 +3,7 @@
   -*/
   .services .service-item {
     position: relative;
+    background: white;
 }
 
 .services .service-item .icon {
