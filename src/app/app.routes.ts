@@ -1,20 +1,33 @@
 import { Routes } from '@angular/router';
-
-import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
-import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
-import { ServicesPageComponent } from './pages/services-page/services-page.component';
+import { SiteComponent } from './pages/site/site.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ShopComponent } from './pages/shop/shop.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { GallaryComponent } from './pages/gallary/gallary.component';
 
 export const routes: Routes = [
     {
-        path : '',
-        component : ProfilePageComponent
+        path: '',
+        component: SiteComponent
     },
     {
-        path : 'portfolio',
-        component : PortfolioPageComponent
+        path : 'about',
+        component : AboutComponent
+    },
+    {
+        path : 'shop',
+        component : ShopComponent
     },
     {
         path : 'services',
-        component : ServicesPageComponent
-    }
+        component : ServicesComponent
+    },
+    {
+        path : 'gallary',
+        component : GallaryComponent
+    },
+    // {
+    //     path : 'shop',
+    //     component : ShopComponent
+    // },
 ];

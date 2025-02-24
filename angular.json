@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "inyana-handmade-crafts": {
+    "inyana-hand-made-crafts": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "baseHref": "/",
-            "outputPath": "dist/inyana-handmade-crafts",
+            "outputPath": "dist/inyana-hand-made-crafts",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -45,6 +45,7 @@
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/aos/dist/aos.js",
               "node_modules/glightbox/dist/js/glightbox.min.js",
+              "node_modules/isotope-layout/dist/isotope.pkgd.min.js",
               "node_modules/swiper/swiper-bundle.min.js"
             ]
           },
@@ -76,10 +77,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "inyana-handmade-crafts:build:production"
+              "buildTarget": "inyana-hand-made-crafts:build:production"
             },
             "development": {
-              "buildTarget": "inyana-handmade-crafts:build:development"
+              "buildTarget": "inyana-hand-made-crafts:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -113,6 +114,7 @@
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/aos/dist/aos.js",
               "node_modules/glightbox/dist/js/glightbox.min.js",
+              "node_modules/isotope-layout/dist/isotope.pkgd.min.js",
               "node_modules/swiper/swiper-bundle.min.js"
             ]
           }

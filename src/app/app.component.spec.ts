@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'inyana-handmade-crafts' title`, () => {
+  it(`should have the 'Inyanga_Hand_Made_Crafts' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('inyana-handmade-crafts');
+    expect(app.title).toEqual('Inyanga_Hand_Made_Crafts');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, inyana-handmade-crafts');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, Inyanga_Hand_Made_Crafts');
   });
 });
