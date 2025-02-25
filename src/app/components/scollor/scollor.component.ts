@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { NavigationService } from '../../services/navigation.service';
+
 
 @Component({
   selector: 'app-scollor',
@@ -9,15 +9,15 @@ import { NavigationService } from '../../services/navigation.service';
 })
 export class ScollorComponent {
 
-  constructor(private navigationService: NavigationService) {}
-
-  scrollToTop(): void {
-    this.navigationService.scrollToTop();
-  }
+  isVisible: boolean = false;
 
   @HostListener('window:scroll', [])
-  onWindowScroll(): void {
-    this.navigationService.toggleScrollTop();
-    this.navigationService.navmenuScrollspy();
+  onWindowScroll() {
+    this.isVisible = window.scrollY > 200;
+  }
+
+  scrollToTop(event: Event) {
+    event.preventDefault(); 
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

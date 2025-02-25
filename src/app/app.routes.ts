@@ -23,7 +23,7 @@ export const routes: Routes = [
         component : ServicesComponent
     },
     {
-        path : 'gallary',
+        path : 'gallery',
         component : GallaryComponent
     },
     // {

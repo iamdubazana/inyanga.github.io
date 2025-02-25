@@ -1,0 +1,26 @@
+.page-heading {
+    margin-bottom: 30px;
+    background-image: url(/images/hand.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.page-heading .inner-content {
+    padding: 150px 0px;
+    text-align: center;
+}
+
+.page-heading .inner-content h2 {
+    font-size: 52px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.page-heading .inner-content span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    font-style: italic;
+}

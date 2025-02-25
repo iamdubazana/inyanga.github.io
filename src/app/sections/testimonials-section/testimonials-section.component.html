@@ -1,26 +1,8 @@
-<section id="testimonials" class="testimonials section light-background">
+<section id="testimonials" class=" section light-background">
   <div class="container section-title" data-aos="fade-up">
     <h2>Testimonials</h2>
-    <p>Hear from those who have benefited from my development, design, and tech solutions!</p>
+    <p>Hear from those who have experienced the artistry and craftsmanship of Inyanga Hand Made Crafts. Their stories reflect the beauty, tradition, and authenticity woven into every piece we create.</p>
   </div>
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-    <div #swiperRef class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" *ngFor="let testimonial of testimonials">
-          <div class="testimonial-item">
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>{{ testimonial.text }}</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-            <img [src]="testimonial.image" class="testimonial-img" alt="{{ testimonial.name }}">
-            <h3>{{ testimonial.name }}</h3>
-            <h4>{{ testimonial.role }}</h4>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </div>
+  <app-slider [testimonials]="testimonials"></app-slider>
+  
 </section>
